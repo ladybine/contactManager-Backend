@@ -13,10 +13,10 @@ dotenv.config();
 @Module({
   imports: [
     MongooseModule.forRoot(
-     /*  process.env.MONGO_URI,
+      /*  process.env.MONGO_URI,
       { connectionName: configuration.connectionName }, */
-      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
-      { connectionName: configuration.connectionName }, 
+      'mongodb+srv://fezakibira:fezakibira@cluster0.1x1anc8.mongodb.net/?retryWrites=true&w=majority',
+      { connectionName: configuration.connectionName },
     ),
     AuthModule,
     UsersModule,
